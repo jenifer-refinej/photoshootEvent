@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;600;700&family=Kumbh+Sans:wght@100..900&family=Lato:wght@400;700;900&family=Lexend+Deca:wght@300&family=Open+Sans&family=Oswald:wght@400;500&family=Poppins:wght@400;600&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    line-height :18.4px;
+}
+body{
+    font-family: "Raleway", sans-serif !important; 
+    width
+
+}
+.header{
+    background-color: #343A40 !important;
+    font-family: sans-serif;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+.header li,a{
+    color: #6E7277 !important;
+    text-align: end !important;
+}
+.logo{
+    color: white !important;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end !important;
+}
+.header li,a:hover{
+    color: #4B9D98 !important;
+}
+
+.services li,a{
+  padding: 0px 8px;
+  text-align: center;
+}
+.dropdown-menu{
+    background-color: #343A40;
+    color: #6E7277;
+}
+
+.dropdown-item:hover{
+    background-color: transparent !important;
+  color: #4B9D98;
+}
+
+/* carsouelstyle */
+.photograph1{
+    font-size: 65px;
+    font-weight: 550px;
+}
+.image1{
+   
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contentcarousel{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.navbar-toggler{
+  background-color: white !important;
+}
+.navbar-expand-md .navbar-collapse{
+    justify-content: end !important;
+}
+@media screen and (min-width:375px) and (max-width:590px){
+    .contentcarousel{
+        margin-left: 10px;
+        h5{
+            font-size: 10px;
+        }
+        h1{
+            font-size:25px !important ;
+        }
+        .btn{
+            padding: 5px 10px !important;
+            font-size: 10px !important;
+        }
+    }
+    .dropdown-menu{
+        background-color: transparent !important;
+        border-color: transparent;
+    }
+    .shopnow{
+        margin-top: -10px !important;
+
+    }
+    .myphotos img{
+        margin-top: -10px;
+        height: 50px !important;
+    }
+    .overlaycontainer{
+        font-size: 5px !important;
+    }
+    .imagecarousel1{
+        height: 300px;
+    }
+   
+    .carosuelh1text{
+        font-size: 15px !important;
+        margin-top: -10px;
+    }
+   .photograph1{
+    font-size: 20px;
+   }
+    
+}
+
+@media screen and(min-width:375px) and (max-width:1000px) {
+    .navbar-nav{
+         align-items: center;
+    }
+    .whitebox{
+        width: 65% !important;
+    }
+}
+.overlaycontainer{
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 20%;
+    right: 4%;
+}
+.overlaycontainer img{
+    margin: 0 8px;
+    animation: imageanimation 2s ease;
+    cursor: pointer;
+}
+
+@keyframes imageanimation {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.contentcarousel h5{
+    animation: designertext 1s ease forwards;
+}
+.contentcarousel h1{
+    animation: designerh1 2s ease forwards;
+}
+.contentcarousel button{
+    animation: designerbutton 3s ease forwards;
+}
+/* about section animation  */
+
+@keyframes designertext {
+    0%{
+        transform: translateY(140%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes designerh1 {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes designerbutton {
+    0%{
+        transform: translateY(160%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.shopnow:hover{
+ background-color: #4B9D98 !important;
+ border-color: transparent !important;
+ color:white !important;
+}
+#imagehover{
+    /* border: 4px solid black !important; */
+    position: relative;
+}
+.myphotos{
+    position: relative;
+}
+  .myphotos img{
+    height: 130px;
+    
+  }
+
+.myphotos img:hover{
+    opacity: 0.5;
+ 
+
+}
+.backtooverwiew:hover{
+    border-color: #343A40 !important;
+}
+
+.visible{
+    display: none ;
+  }
+  .visible1,.visible2,.visible3 h1{
+    animation: h1 2s ease;
+    color: white !important;
+  }
+  @keyframes h1 {
+    0%{
+        transform: translateX(20);
+    }
+    10%{
+        transform: translateX(-100px);
+    }
+  }
+  .visible1,.visible2,.visible3 p{
+    animation: p 2s ease;
+    color: white !important;
+  }
+  @keyframes p {
+    0%{
+        transform: translateX(20px);
+    }
+    10%{
+        transform: translateX(-100px);
+    }
+  }
+  
+/* 
+  aboutandimages starts  */
+ .content h1,.content p{
+   animation:abouttransition 4s ease;
+ }
+ .weding-photos{
+    gap: 20px;
+ }
+ .content div{
+    animation: aboutdiv 4s ease-in;
+ }
+ @keyframes abouttransition {
+    0%{
+        transform: translateY(50%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+ }
+ @keyframes aboutdiv {
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+ }
+ .weding-photos img:hover{
+    cursor: pointer;
+    opacity: .6;
+ }
+  /* aboutandimages ends */
+
+.part2{
+    padding: 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif !important; 
+    background-color:whitesmoke;
+
+}
+.uniquelocation {
+   
+    width: 100%;
+    height: 70vh;
+   
+    background-image: url('https://w.wallhaven.cc/full/73/wallhaven-73o813.jpg');
+    /* background-image: url('https://i.pinimg.com/originals/07/d6/81/07d6817b41ea4047567bcb2ac5d67ce0.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   
+}
+.uniquelocation p{
+    font-size: 14px;
+}
+.whitebox{
+    position: absolute;
+    top: 20%;
+    
+    left: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align:center;
+    color: #293138;
+    padding: 20px !important;
+    background: #edebeb;
+    width: 45%;
+    height: 40vh;
+}
+.whitebox button{
+    border-color: transparent;
+    background-color: #4B9D98;
+    color: white;
+    border-radius: 25px;
+    
+}
+.whitebox button:hover{
+    border-color: #4B9D98 !important;
+}
+@media screen and (min-width: 500px) and (max-width: 1070px) {
+    .uniquelocation {
+        font-size: 20px; /* Specify font size */
+    }
+    .uniquelocation p {
+        font-size: 13px; /* Specify font size */
+    }
+    .whitebox{
+        width: 90%;
+        left: 20px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 500px) {
+    .uniquelocation {
+        font-size: 18px; /* Specify font size */
+    }
+    .uniquelocation p {
+        font-size: 10px; /* Specify font size */
+    }
+    .whitebox {
+        margin: -40px 10px;
+    
+
+    width: 80%;
+    height: 60vh;
+   left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+}
+/* drone shoots */
+.imagesection{
+    width: 100%;
+}
+#drone{
+    /* background-color: #343A40 !important; */
+   padding:  20px 15px;
+   display: flex;
+  
+}
+
+.circles{
+    display: flex;
+  
+
+}
+.circleimg img{
+width: 70%;
+height: 140px;
+border-radius: 100%;
+
+}
+.circle1img{
+    display: flex;
+    flex-direction: column;
+  flex-wrap: wrap;
+    justify-content: s;
+}
+.circle1img img{
+    width: 100%;
+    height: 140px;
+    border-radius: 100%;
+}
+.titledescriptionimg h5{
+    font-size: 16px;
+    
+}
+.titledescriptionimg p{
+  font-size: 12px;
+}
+@media screen and(min-width:375px) and (max-width:900px) {
+    #drone{
+    justify-content: center;
+    }
+    .aboutimage{
+        width: 50%;
+    }
+    .carousel-item{
+        height: 100%;
+    }
+}
+#drone{
+    font-family: "Raleway", sans-serif !important; 
+    color: #2D3135;
+}
+.galleryimg img{
+    transition: transform 0.5s ease;
+    height: 200px;
+    margin: 10px;
+}
+.galleryimg img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.iconwithcontent h5,.iconwithcontent p{
+color: #8a8c8f;
+}
+.iconwithcontent h5{
+    font-weight: 400;
+}
+ .loadmore:hover{
+
+    background-color: #336763 !important;
+ } 
+ @media screen and (min-width:375px) and (max-width:700px) {
+    .rightaligncontent{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+    .rightaligncontent h1{
+        text-align: center !important;
+        margin-bottom: 5px !important;
+    }
+    .rightaligncontent p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px !important;
+        padding: 10px;
+        text-align: center;
+    }
+ }
+ .cardgreen{
+    background-color: #4B9D98;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+ }
+ .circle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+   
+
+}
+.gallery-img-holder{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.circle-container{
+    animation: animate 2s linear 0s;
+}
+.circle-container img{
+    height: 200px;
+    border-radius: 100%;
+    border:5px solid rgb(117, 116, 116);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    /* translate: (-50%,-50%); */
+    
+}
+.wrapper span{
+    animation: animate 6s infinite 0s;
+    color: white;
+    opacity: 0;
+    height: 100px;
+
+    font-size:3rem;
+    
+    position: absolute;
+}
+.wrapper span:nth-child(1){
+    animation-delay: 2s;
+}
+.wrapper span:nth-child(2){
+    animation-delay: 5s;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+footer{
+    width: 100%;
+    
+    background-color: #343A40;
+}
+.footerimage:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.hoverdisplaytext{
+    font-weight: bold;
+    animation: textfromleft 1s ease;
+}
+@keyframes textfromleft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.footerlist a{
+text-decoration: none;
+color: #edebeb !important;
+}
+footer{
+    font-family: "Raleway", sans-serif !important; 
+
+}
+.footerlist{
+    color: #edebeb !important;
+}
